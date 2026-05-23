@@ -1468,9 +1468,9 @@ function CTABand() {
      {{business}}   {{service}}     {{message}}
    Send To email: gargmanav928@gmail.com
 ──────────────────────────────────────────────────────────────────────────── */
-const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID  = "service_f6tq51w";
+const EMAILJS_TEMPLATE_ID = "template_1fea6j5";
+const EMAILJS_PUBLIC_KEY  = "Rfuc7It4yV4DNoLoZ";
 
 function Contact() {
   const [form, setForm]       = useState({ name:"", email:"", phone:"", business:"", service:"", message:"" });
