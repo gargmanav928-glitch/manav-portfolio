@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 /* ─────────────────────────────────────────────
    GLOBAL STYLES
@@ -315,7 +316,7 @@ const GlobalStyles = () => (
     .tags { display:flex; flex-wrap:wrap; gap:10px; }
     .industry-tag { background:var(--blue3); border:1px solid rgba(79,142,247,.18); color:var(--blue2); }
 
-    /* ── Services ── */
+    /* ─��� Services ── */
     .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
     .svc-card {
       padding:36px 28px; border-radius:var(--r);
@@ -564,7 +565,7 @@ const GlobalStyles = () => (
   `}</style>
 );
 
-/* ─────────────────────────────────────────────
+/* ────────────────────────────────────────────��
    HOOKS
 ───────────────────────────────────────────── */
 function useReveal() {
@@ -1165,7 +1166,7 @@ function About() {
 
 /* ─────────────────────────────────────────────
    SERVICES
-───────────────────────────────────────────── */
+────────────────────────────��──────────────── */
 function Services() {
   const svcs = [
     { icon: "📣", title: "Meta Ads Management", desc: "Strategic Facebook & Instagram campaigns designed to generate high-quality leads and maximise your ad spend efficiency.", items: ["Campaign Setup & Structure", "Audience Research", "Creative Direction", "A/B Testing", "Weekly Optimisation", "Performance Reports"], chartColor: "#1877f2", chartData: [40,55,48,70,62,80,75,92] },
@@ -1691,6 +1692,8 @@ export default function App() {
       <div className="sticky-cta">
         <a href="#contact" className="btn btn-gold" style={{ width: "100%", justifyContent: "center" }}>Book Free Consultation</a>
       </div>
+      
+      <Analytics />
     </>
   );
 }
